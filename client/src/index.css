@@ -1,0 +1,209 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Roboto', sans-serif;
+  background-color: #fef3ed;
+  color: #1a2744;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #d9617d !important; /* themeMidPink */
+}
+
+h2 {
+  font-weight: 400;
+}
+
+.line-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.line-container div.animated {
+  animation: extend 0.8s ease-in-out forwards;
+}
+
+@keyframes extend {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
+}
+
+.formBody {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.formRow {
+  padding: 10px;
+  text-align: center;
+}
+
+.formLabel {
+  display: inline-block;
+  width: 150px;
+  padding: 10px;
+  color: white;
+}
+
+.formInput,
+input {
+  text-align: left;
+  padding: 5px;
+}
+
+.feedList {
+  max-width: 80%;
+  margin: auto;
+}
+
+.playlistListItem {
+  display: grid;
+  grid-template-columns: 1fr 7fr 2fr;
+}
+
+.feedList li:nth-child(odd) {
+  color: #6b9bc4;
+}
+
+.dashboardItemLiked li:nth-child(odd) {
+  color: #1a2744;
+}
+
+.feedList li:nth-child(even) {
+  color: #d9617d;
+}
+
+.dashboardItem li {
+  color: #d9617d;
+}
+
+.dashboardItem li p {
+  color: #1a2744;
+}
+
+.songContainer {
+  padding: 20px 10px;
+  width: 60%;
+  margin: auto;
+}
+
+.searchIcon,
+.likeIcon {
+  max-width: 30px;
+  padding: 5px;
+}
+
+.resultList ul {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+.profileImage {
+  border: 2px solid #1a2744;
+  border-radius: 10%;
+  vertical-align: middle;
+  object-fit: cover;
+  min-width: 200px;
+  max-height: 200px;
+}
+
+.profileImageSmall {
+  border: 2px solid #1a2744;
+  vertical-align: middle;
+  object-fit: cover;
+  min-width: 120px;
+  max-height: 120px;
+}
+
+.playlistImage {
+  border: 2px solid #1a2744;
+  border-radius: 5px;
+  vertical-align: middle;
+  object-fit: cover;
+  min-width: 200px;
+  max-height: 200px;
+}
+
+.playlistImageSmall {
+  min-width: 150px;
+  max-height: 150px;
+}
+
+.listSizeImage {
+  max-width: 80px;
+  max-height: 80px;
+}
+
+.playlistCard {
+  display: flex;
+  flex-direction: row;
+}
+
+.playlistCardLarge {
+  display: grid;
+  grid-template-columns: 3fr 6fr 1fr;
+}
+
+.dashboardItem {
+  border: 2px solid #1a2744;
+}
+
+@layer components {
+  .accountFormCss {
+    @apply appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500;
+  }
+
+  .accountTextLabels {
+    @apply block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2;
+  }
+
+  .buttonCss {
+    @apply p-2 m-1 border-2 whitespace-nowrap rounded-md transition duration-500 ease-in-out;
+  }
+}
+
+input[type='checkbox'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: 2px solid #d9617d;
+  background-color: transparent;
+  border-radius: 4px;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+input[type='checkbox']:hover {
+  border-color: #6b9bc4 !important;
+}
+
+input[type='checkbox']:checked {
+  background-color: #6b9bc4 !important;
+  border-color: #6b9bc4 !important;
+}
+
+input[type='checkbox']:focus-visible {
+  border-color: #6b9bc4;
+  outline: none;
+  box-shadow: none;
+}
