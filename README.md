@@ -1,7 +1,7 @@
 ## **Disclaimer** I was not the only person contributing to this project. I was responsible for handling anything to do with Spotify account integraton, playlist creation, playlist export to Spotify, and session management in the backend. 
 
 <br>
-# **GPT**unes
+# GPTunes
 GPTunes utilises a combination of emerging technologies to create playlists based on user prompts. GPTunes makes use of AI image generation, Natural Language Processing, Spotify and Weather APIs, to create unique one-of-a-kind playlists.This web app most notably utilises OpenAI models and the Spotify API to allow users to create curated or random playlists based on their input prompts, which can then be exported to Spotify. 
 
 
