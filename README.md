@@ -1,3 +1,5 @@
+## **Disclaimer** I was not the only person contributing to this project. I was responsible for handling anything to do with Spotify account integraton, playlist creation, playlist export to Spotify, and session management in the backend. 
+
 # project-group-heavenly-herons
 CS732/SE750 group repository for the Heavenly Herons
 <br>
