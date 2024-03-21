@@ -17,75 +17,7 @@ GPTunes utilises a combination of emerging technologies to create playlists base
 
 
 ## Getting Started
-To get GPTunes running, we need to run a few commands to add the necessary dependencies and scripts:
-Run the following command in BOTH the Client folder and Server folder
-
-```npm install```
-
-To also get the relevant API keys and URLs for the app to fetch properly, we need to create an env file. We must create an env file in both the Client side and Server side.
-
-Create an .env file by Right-clicking client, adding a new file and naming it ".env". In the front end we want to add the following:
-
-```sh
-VITE_API_BASE_URL = http://localhost:3001
-VITE_IMAGE_BASE_URL = http://localhost:3001/
-```
-
-This will serve as the URL for the server/backend and is necessary for fetching, routing and database related code.
-
-Now create a second .env file in the Server side, naming it ".env". In the backend we want to add the following
-
-Note: removed for privacy
-
-**We understand that it is crucial that these keys are kept secret and not shared, however for the purpose of this assignment, we are publishing it here as the repo is private.**
-
-OpenAI API uses API keys for authentication. You can use your own API keys if you would like, however we have provided our one (under Free Trial).
-
-https://platform.openai.com/docs/api-reference
-
-After navigating to 'api-keys', you will need to generate an API key and insert the key into the .env file above. 
-
-<br>
-
-To run GPTunes, run the following commands in the command line:
-Alternatively, if you are running npmscripts, click the following buttons:
-**Client side:**
-
-```
-npm run dev
-```
-
-**Server side:**
-
-```
-npm start
-```
-
-Once you have the application up and running and have created or logged into an account, you can connect to a Spotify profile by clicking the 'Edit your account' button from your dashboard and selecting 'Connect to Spotify'.
-
-
-**Connecting to Spotify:** *Spotify has a rule where it will review applications for deployment and this process can take up to 6 weeks. These apps are generally ready-to-deploy and commercial. For the purpose of this assignment, we kept the WebApp within the Spotify-For-Developers environment, which only allows you to connect your Spotify to this WebApp if you have specific permissions.*
-
-*Therefore, please connect the application to Spotify using this account for test purposes. If you are already logged into Spotify on your own computer, you will need to log out.*
-
-  ```
-  Spotify Account
-  Email: heavenlyherons@gmail.com
-  Password: project732
-  ```
-<b>DISCLAIMER: IF THE PERSON MARKING OR REVIEWING THIS PROJECT HAS ALREADY CONNECTED TO SPOTIFY, YOU WILL SEE THAT IT HAS ALREADY BEEN CONNECTED.</b>
-
-## Existing Users
-Here are some existing users and playlists you can view/search for:
-* Ash Ketchum
-* Professor Oak
-* Brock
-* Rocket Jessie
-* Rocket James
-* Misty
-
-
-
+**This project will not function without the .env configuration holding the necessary API keys. This file and the API keys have not been shared for security reasons.**
 
 ## Notes
 * If multiple people are viewing/marking the application, all images from other users and their playlists will not be viewable as only the image url is stored in the database.
